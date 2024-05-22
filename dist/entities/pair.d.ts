@@ -1,5 +1,5 @@
 import { BigintIsh, CurrencyAmount, Price, Token } from '@uniswap/sdk-core';
-export declare const computePairAddress: ({ factoryAddress, tokenA, tokenB }: {
+export declare const computePairAddress: ({ factoryAddress, tokenA, tokenB, }: {
     factoryAddress: string;
     tokenA: Token;
     tokenB: Token;
