@@ -15,7 +15,7 @@ var invariant = _interopDefault(require('tiny-invariant'));
  * @deprecated use FACTORY_ADDRESS_MAP instead
  */
 
-var FACTORY_ADDRESS = '0x90Ea7fA7aaE75F92eB6D493f4ECF995357C0167d';
+var FACTORY_ADDRESS = '0xd1E3b8f35fbaA87dDb69b1C3bD1Fadb7af7a8Baa';
 var FACTORY_ADDRESS_MAP = sdkCore.V2_FACTORY_ADDRESSES;
 var INIT_CODE_HASH = '0x114ce143889b1e7345ea2ae76c3b4a8ff24ee55a0745dc474b42e2fdd7848790';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption

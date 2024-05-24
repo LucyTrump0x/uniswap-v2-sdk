@@ -1718,10 +1718,16 @@
     tiny-invariant "^1.1.0"
     toformat "^2.0.0"
 
-"@uniswap/v2-core@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@uniswap/v2-core/-/v2-core-1.0.1.tgz#af8f508bf183204779938969e2e54043e147d425"
-  integrity sha512-MtybtkUPSyysqLY2U210NBDeCHX+ltHt3oADGdjqoThZaFRDKwM6k1Nb3F0A3hk5hwuQvytFWhrWHOEq6nVJ8Q==
+"@uniswap/v2-core@https://github.com/0xdefi-club/uniswap-sdk-core":
+  version "4.2.0"
+  resolved "https://github.com/0xdefi-club/uniswap-sdk-core#94753cc32bcfae0f6bb17aae9c511b5ac4afadb0"
+  dependencies:
+    "@ethersproject/address" "^5.0.2"
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.4"
+    tiny-invariant "^1.1.0"
+    toformat "^2.0.0"
 
 abab@^2.0.0:
   version "2.0.3"
