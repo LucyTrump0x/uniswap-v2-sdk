@@ -31,7 +31,7 @@
   "devDependencies": {
     "@types/big.js": "^4.0.5",
     "@types/jest": "^24.0.25",
-    "@uniswap/v2-core": "https://github.com/0xdefi-club/uniswap-sdk-core",
+    "@uniswap/v2-core": "^1.0.1",
     "tsdx": "^0.14.1"
   },
   "engines": {

@@ -4,7 +4,7 @@ import JSBI from 'jsbi'
 /**
  * @deprecated use FACTORY_ADDRESS_MAP instead
  */
-export const FACTORY_ADDRESS = '0xd1E3b8f35fbaA87dDb69b1C3bD1Fadb7af7a8Baa'
+export const FACTORY_ADDRESS = '0x6C0B8Ce9918bD3b12F49043D317746C538376910'
 
 export const FACTORY_ADDRESS_MAP: { [chainId: number]: string } = V2_FACTORY_ADDRESSES
 
