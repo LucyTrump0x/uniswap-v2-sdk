@@ -17,14 +17,14 @@ import {
   ONE,
   ONE_HUNDRED_PERCENT,
   ZERO,
-  ZERO_PERCENT,
+  ZERO_PERCENT
 } from '../constants'
 import { InsufficientInputAmountError, InsufficientReservesError } from '../errors'
 
 export const computePairAddress = ({
   factoryAddress,
   tokenA,
-  tokenB,
+  tokenB
 }: {
   factoryAddress: string
   tokenA: Token
@@ -207,17 +207,6 @@ export class Pair {
       inputAmount.currency.equals(this.token0) ? this.token1 : this.token0,
       JSBI.divide(numerator, denominator) // JSBI.divide will round down by itself, which is desired
     )
-    //
-    console.log(
-      numerator.toString(),
-      'numerator',
-      denominator.toString(),
-      'denominator',
-      inputAmountWithFeeAndAfterTax.toString(),
-      'inputAmountWithFeeAndAfterTax',
-      inputReserve.quotient.toString(),
-      'inputReserve.quotient'
-    )
 
     if (JSBI.equal(outputAmount.quotient, ZERO)) {
       throw new InsufficientInputAmountError()
@@ -236,7 +225,7 @@ export class Pair {
 
     return [
       outputAmountAfterTax,
-      new Pair(inputReserve.add(inputAmountAfterTax), outputReserve.subtract(outputAmountAfterTax)),
+      new Pair(inputReserve.add(inputAmountAfterTax), outputReserve.subtract(outputAmountAfterTax))
     ]
   }
 

@@ -367,9 +367,7 @@ var Pair = /*#__PURE__*/function () {
     var numerator = JSBI.multiply(inputAmountWithFeeAndAfterTax, outputReserve.quotient);
     var denominator = JSBI.add(JSBI.multiply(inputReserve.quotient, _1000), inputAmountWithFeeAndAfterTax);
     var outputAmount = CurrencyAmount.fromRawAmount(inputAmount.currency.equals(this.token0) ? this.token1 : this.token0, JSBI.divide(numerator, denominator) // JSBI.divide will round down by itself, which is desired
-    ); //
-
-    console.log(numerator.toString(), 'numerator', denominator.toString(), 'denominator', inputAmountWithFeeAndAfterTax.toString(), 'inputAmountWithFeeAndAfterTax', inputReserve.quotient.toString(), 'inputReserve.quotient');
+    );
 
     if (JSBI.equal(outputAmount.quotient, ZERO)) {
       throw new InsufficientInputAmountError();
