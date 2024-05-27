@@ -290,6 +290,19 @@ export class Pair {
       JSBI.greaterThanOrEqual(outputAmount.quotient, this.reserveOf(outputAmount.currency).quotient) ||
       JSBI.greaterThanOrEqual(outputAmountBeforeTax.quotient, this.reserveOf(outputAmount.currency).quotient)
     ) {
+      console.log(
+        JSBI.equal(this.reserve0.quotient, ZERO),
+        JSBI.equal(this.reserve1.quotient, ZERO),
+        '-----------',
+        'outputAmount.quotient',
+        outputAmount.quotient.toString(),
+        this.reserveOf(outputAmount.currency).quotient.toString(),
+        '-------------',
+        JSBI.greaterThanOrEqual(outputAmount.quotient, this.reserveOf(outputAmount.currency).quotient),
+        '-------outputAmountBeforeTax.quotient------',
+        outputAmountBeforeTax.quotient.toString(),
+        JSBI.greaterThanOrEqual(outputAmountBeforeTax.quotient, this.reserveOf(outputAmount.currency).quotient)
+      )
       throw new InsufficientReservesError()
     }
 
